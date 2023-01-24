@@ -3,26 +3,25 @@ title: Home
 layout: page
 ---
 
-# Image Recognizer 
-Can classify 20 different types of caps <br/>
-The types are following: <br/>
-1. baseball cap
-2. beanie cap
-3. fedora cap
-4. cowboy hat
-5. kepi cap
-6. flat cap
-7. trucker cap
-8. newsboy cap
-9. pork pie hat
-10. bowler hat
-11. top hat
-12. sun hat
-13. boater hat
-14. ivy cap
-15. bucket hat
-16. balaclava cap
-17. turban cap
-18. taqiyah cap
-19. rasta cap
-20. visor cap
+# Image Recognizer
+Can classify 20 different types of sports balls / game balls commonly played around the world. The types are following: <br/>
+1. Soccer Ball
+2. Cricket Ball
+3. Basketball Ball
+4. Field Hockey Ball
+5. Volleyball 
+6. Tennis Ball
+7. Rugby Ball
+8. Baseball
+9. Table Tennis Ball (Ping Pong)
+10. American Football 
+11. Golf Ball
+12. Handball
+13. Pool Ball
+14. Water Polo Ball
+15. Softball
+16. Bocce Ball
+17. Bowling Ball
+18. Squash Ball
+19. Lacrosse Ball
+20. Wiffleball
