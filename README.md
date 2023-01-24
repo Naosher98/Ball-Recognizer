@@ -34,7 +34,7 @@ For more details on the dataset preparation process, please refer to the noteboo
 **Data Cleaning**: Data cleaning was an integral and time-consuming aspect of the model development process. Since the data was collected from the internet, there were many irrelevant and noisy images. Furthermore, some images contained errors. The fastai ImageClassifierCleaner was used to clean and update the data after each training or fine-tuning iteration, except for the final iteration which was used to train the final model.
 
 ## Model Deployment:
-The model was deployed to the HuggingFace Spaces Gradio App, where it can be accessed and tested by users. The implementation details and code can be found in the `deployment` folder or by this [link](https://huggingface.co/spaces/Naosher/Ball-recognizer).
+The model was deployed to the HuggingFace Spaces Gradio App, where it can be accessed and tested by users. The implementation details and code can be found in the `deployment` folder or by this [link](https://huggingface.co/spaces/Naosher/Ball-recognizer).<br/>
 <img src = "deployment\gradio_app.png", width ="600", height="300">
 
 ## Deployment of API on GitHub Pages Website
