@@ -41,5 +41,5 @@ The model was deployed to the HuggingFace Spaces Gradio App, where it can be acc
 ## Deployment of API on GitHub Pages Website
 The deployed model API has been integrated into this [GitHub Pages Website](https://naosher98.github.io/Ball-Recognizer/), allowing users to easily access and test the model's capabilities. The implementation details, usage instructions, and other relevant information can be found in the `docs` folder for reference.
 <a href="https://naosher98.github.io/Ball-Recognizer/ball_recognizer.html">
-<img src = "deployment\gradio_app.png" width = "900" height = "450">
+<img src = "deployment\Web_app.png" width = "900" height = "450">
 </a>
