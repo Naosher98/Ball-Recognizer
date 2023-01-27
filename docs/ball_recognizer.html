@@ -3,7 +3,7 @@ title: Ball Recognizer
 layout: page
 ---
 
-<input id="photo" type="file">
+<!-- <input id="photo" type="file">
 <div id="results"></div>
 <script>
     async function loaded(reader) {   
@@ -20,5 +20,55 @@ layout: page
         reader.readAsDataURL(photo.files[0]);
     }
     photo.addEventListener('input', read);
-</script>
+</script> -->
 
+<div id="image-selector">
+    <img src="deployment\unknown_00 .jpg" onclick="selectImage(this)" width="100">
+    <img src="deployment\unknown_01.jpg" onclick="selectImage(this)" width="100">
+    <img src="deployment\unknown_02.jpg" onclick="selectImage(this)" width="100">
+    <img src="deployment\unknown_03.png" onclick="selectImage(this)" width="100">
+    <img src="deployment\unknown_04.jpg" onclick="selectImage(this)" width="100">
+  </div>
+  <input id="photo" type="file" accept="image/*" style="display:none;">
+  <div id="results"></div>
+  <div id="loader" style="display:none;">Loading...</div>
+  <div id="error" style="display:none;"></div>
+  <script>
+      function selectImage(img) {
+          // set the src of the input file to the src of the selected image
+          document.getElementById("photo").src = img.src;
+          // trigger the change event on the input file
+          document.getElementById("photo").dispatchEvent(new Event("change"));
+      }
+      async function loaded(reader) {   
+          // Show the loader while the image is being processed
+          document.getElementById("loader").style.display = "block";
+  
+          const response = await fetch("https://naosher-ball-recognizer.hf.space/run/predict", {
+              method: "POST", headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({data: [reader.result]})});
+          
+          if (!response.ok) {
+              // If there is an error, display it and hide the loader
+              document.getElementById("error").innerHTML = "Error: " + response.statusText;
+              document.getElementById("error").style.display = "block";
+              document.getElementById("loader").style.display = "none";
+              return;
+          }
+  
+          const json = await response.json();
+          const label = json['data'][0]['label'];
+          results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+          
+          // Hide the loader and clear the error message
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("error").style.display = "none";
+      }
+      function read() {
+          const reader = new FileReader();
+          reader.addEventListener('load', () => loaded(reader))
+          reader.readAsDataURL(photo.files[0]);
+      }
+      photo.addEventListener('change', read);
+  </script>
+  
