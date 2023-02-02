@@ -1,25 +1,7 @@
 # Ball Recognizer
-An image classification model is a comprehensive solution that covers the entire process from data collection, cleaning, model training, deployment, and API integration. This cutting-edge model is specifically designed to classify 20 different types of sports balls, including: <br/>
-1. Soccer Ball
-2. Cricket Ball
-3. Basketball Ball
-4. Field Hockey Ball
-5. Volleyball 
-6. Tennis Ball
-7. Rugby Ball
-8. Baseball
-9. Table Tennis Ball (Ping Pong)
-10. American Football 
-11. Golf Ball
-12. Handball
-13. Pool Ball
-14. Water Polo Ball
-15. Softball
-16. Bocce Ball
-17. Bowling Ball
-18. Squash Ball
-19. Lacrosse Ball
-20. Wiffleball
+## Project Objective:
+The objective of the project is to develop an image classification model that accurately classifies 20 different types of sports balls, including Soccer Ball, Cricket Ball, Basketball Ball, Field Hockey Ball, Volleyball, Tennis Ball, Rugby Ball, Baseball, Table Tennis Ball (Ping Pong), American Football, Golf Ball, Handball, Pool Ball, Water Polo Ball, Softball, Bocce Ball, Bowling Ball, Squash Ball, Lacrosse Ball, and Wiffleball.<br/>
+ The model should cover the entire process, from data collection, cleaning, training, deployment, and API integration, and provide a comprehensive solution for sports ball classification. The goal is to achieve a high level of accuracy in classifying sports balls, making it useful for various applications such as ball recognition in sports events, product identification in retail, and sports equipment classification.<br/>
 
 ## Data Preparation:
 Dataset Preparation is a crucial step in the development of any image classification model. Great care is taken to ensure the highest quality of data for training and testing the model.<br/>
