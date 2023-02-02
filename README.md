@@ -1,4 +1,4 @@
-# Ball Recognizer
+# Sports Ball Recognizer
 ## Project Objective:
 The objective of the project is to develop an image classification model that accurately classifies 20 different types of sports balls, including Soccer Ball, Cricket Ball, Basketball Ball, Field Hockey Ball, Volleyball, Tennis Ball, Rugby Ball, Baseball, Table Tennis Ball (Ping Pong), American Football, Golf Ball, Handball, Pool Ball, Water Polo Ball, Softball, Bocce Ball, Bowling Ball, Squash Ball, Lacrosse Ball, and Wiffleball.<br/>
  The model should cover the entire process, from data collection, cleaning, training, deployment, and API integration, and provide a comprehensive solution for sports ball classification. The goal is to achieve a high level of accuracy in classifying sports balls, making it useful for various applications such as ball recognition in sports events, product identification in retail, and sports equipment classification.<br/>
